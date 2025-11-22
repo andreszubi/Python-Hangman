@@ -101,7 +101,7 @@ while not game_over:
     print(display)
 
     # Check if the guess is in the chosen word.
-    if guess not in display:
+    if guess not in chosen_word:
         lives -= 1
         print(f"You have {lives} lives left.")
         #Check if the user has lost the game.
