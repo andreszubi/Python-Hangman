@@ -105,17 +105,46 @@ while not game_over:
         if lives == 0:
             game_over = True
             print(stages[0])
+            print("You guessed:")
             print(display)
-            print(f"The word was {chosen_word}.")
+            print(f"The word was: {chosen_word}.")
             print("You lose!")
+            break
 
     # Check if the user has won the game.
     if "_" not in display:
         game_over = True
+        print(stages[6])
+        print("You guessed:")
+        print(display)
+        print(f"The word was: {chosen_word}.")
         print("You win.")
-
+        break
     # Print the ASCII art for the hangman game.
-
+    if lives ==  6:
+        print(stages[6])
+        print("Guessed so far:")
+        print(display)
+    elif lives == 5:
+        print(stages[5])
+        print("Guessed so far:")
+        print(display)
+    elif lives == 4:
+        print(stages[4])
+        print("Guessed so far:")
+        print(display)
+    elif lives == 3:
+        print(stages[3])
+        print("Guessed so far:")
+        print(display)
+    elif lives == 2:
+        print(stages[2])
+        print("Guessed so far:")
+        print(display)
+    elif lives == 1:
+        print(stages[1])
+        print("Guessed so far:")
+        print(display)
 
 
 
