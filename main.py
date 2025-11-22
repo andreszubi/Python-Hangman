@@ -101,9 +101,13 @@ while not game_over:
     if guess not in display:
         lives -= 1
         print(f"You have {lives} lives left.")
+        #Check if the user has lost the game.
         if lives == 0:
             game_over = True
-            print("You lose.")
+            print(stages[0])
+            print(display)
+            print(f"The word was {chosen_word}.")
+            print("You lose!")
 
     # Check if the user has won the game.
     if "_" not in display:
@@ -111,7 +115,7 @@ while not game_over:
         print("You win.")
 
     # Print the ASCII art for the hangman game.
-    
+
 
 
 
