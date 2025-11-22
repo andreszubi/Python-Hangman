@@ -61,6 +61,9 @@ stages = [r'''
 # Set up the word list for the hangman game.
 word_list = ["aardvark", "baboon", "camel"]
 
+# Set up the lives for the hangman game.
+lives = 6
+
 # Choose a random word from the word list.
 chosen_word = random.choice(word_list)
 print(chosen_word)
