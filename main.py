@@ -133,7 +133,7 @@ while not game_over:
         print("You guessed:")
         print(display)
         print(f"The word was: {chosen_word}.")
-        print("You win.")
+        print("You win!")
         break
     # Print the ASCII art for the hangman game.
     if lives ==  6:
