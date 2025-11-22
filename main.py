@@ -117,7 +117,6 @@ while not game_over:
     # Check if the user has won the game.
     if "_" not in display:
         game_over = True
-        print(stages[6])
         print("You guessed:")
         print(display)
         print(f"The word was: {chosen_word}.")
