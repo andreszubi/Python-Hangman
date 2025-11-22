@@ -84,9 +84,15 @@ while not game_over:
     
     print(display)
 
+    if guess not in display:
+        lives -= 1
+        print(f"You have {lives} lives left.")
+        if lives == 0:
+            game_over = True
+            print("You lose.")
     if "_" not in display:
         game_over = True
-        print("You win!")
+        print("You win.")
 
 
 
