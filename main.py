@@ -37,6 +37,7 @@ while not game_over:
 
     if guess in correct_letters:
         print(f"You've already guessed the letter '{guess}'. Try a different letter.")
+        print(stages[lives])
         continue
     
     for letter in chosen_word:
