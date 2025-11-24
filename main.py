@@ -1,65 +1,8 @@
 import random
+import hangman_words from words_list
+import hangman_art from stages
 
-# Set up the stages of the hangman game with the ASCII art.
-stages = [r'''
-  +---+
-  |   |
-  O   |
- /|\  |
- / \  |
-      |
-=========
-''', r'''
-  +---+
-  |   |
-  O   |
- /|\  |
- /    |
-      |
-=========
-''', r'''
-  +---+
-  |   |
-  O   |
- /|\  |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|   |
-      |
-      |
-=========''', '''
-  +---+
-  |   |
-  O   |
-  |   |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
-      |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-      |
-      |
-      |
-      |
-=========
-''']
 
-# Set up the word list for the hangman game.
-word_list = ["aardvark", "baboon", "camel"]
 
 # Set up the lives for the hangman game.
 lives = 6
