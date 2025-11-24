@@ -54,7 +54,7 @@ while not game_over:
     # Check if the guess is in the chosen word.
     if guess not in chosen_word:
         lives -= 1
-        print("You have guessed the letter '{guess}' incorrectly. You have lost a life.")
+        print(f"You have guessed the letter '{guess}' incorrectly. You have lost a life.")
         print(f"You have {lives} lives left.")
         #Check if the user has lost the game.
         if lives == 0:
