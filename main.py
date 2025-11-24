@@ -34,6 +34,11 @@ while not game_over:
     # Get the guess from the user.
     guess = input("Guess a letter: ").lower()
     display = ""
+
+    if guess in correct_letters:
+        print(f"You've already guessed the letter '{guess}'. Try a different letter.")
+        continue
+    
     for letter in chosen_word:
         if letter == guess:
             display += letter
@@ -48,6 +53,7 @@ while not game_over:
     # Check if the guess is in the chosen word.
     if guess not in chosen_word:
         lives -= 1
+        print("You have guessed the letter '{guess}' incorrectly. You have lost a life.")
         print(f"You have {lives} lives left.")
         #Check if the user has lost the game.
         if lives == 0:
@@ -56,7 +62,7 @@ while not game_over:
             print("You guessed:")
             print(display)
             print(f"The word was: {chosen_word}.")
-            print("You lose!")
+            print(f"***********************YOU LOSE**********************")
             break
 
     # Check if the user has won the game.
@@ -67,7 +73,7 @@ while not game_over:
         print("You guessed:")
         print(display)
         print(f"The word was: {chosen_word}.")
-        print("You win!")
+        print(f"***********************YOU WIN**********************")
         break
     
     # Print the ASCII art for the hangman game.
